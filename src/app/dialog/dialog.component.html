@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>adicionar produtos</h1>
+<div mat-dialog-content>
+    <form action="" [formGroup]="productForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Produtos</mat-label>
+            <input matInput placeholder="nome do produto" formControlName="produto">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Categoria</mat-label>
+            <mat-select placeholder="categoria do produto" formControlName="categoria">
+                <mat-option value="Frutas">Frutas</mat-option>
+                <mat-option value="Vegetais">Vegetais</mat-option>
+                <mat-option value="Eletrônicos">Eletrônicos</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Escolher data</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="data">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <label for="" id="example-radio-group-label">
+            <h1>Produtos freshness</h1>
+        </label>
+        <mat-radio-group class="example-radio-group" aria-labelledby="produtos selecionados" formControlName="freshness">
+            <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshnessLists" [value]="fresh">
+                {{ fresh }}
+            </mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Preços</mat-label>
+            <input matInput placeholder="preços" type="number" formControlName="preco">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>cometário</mat-label>
+            <textarea name="" id="" cols="30" rows="5" matInput formControlName="comentarios"></textarea>
+        </mat-form-field>
+    </form>
+</div>
+
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close="">fechar</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProdutos()">{{ actionBTN }}</button>
+</div>

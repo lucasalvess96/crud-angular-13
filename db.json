@@ -1,0 +1,59 @@
+{
+  "listaProdutos": [
+    {
+      "produto": "A20",
+      "categoria": "Eletrônicos",
+      "freshness": " Refurbished",
+      "preco": 1109,
+      "comentarios": "Ótimo !!!",
+      "data": "2022-06-22T03:00:00.000Z",
+      "id": 1
+    },
+    {
+      "produto": "Cenoura",
+      "categoria": "Vegetais",
+      "freshness": " Refurbished",
+      "preco": 8,
+      "comentarios": "caro!",
+      "data": "2022-06-30T03:00:00.000Z",
+      "id": 3
+    },
+    {
+      "produto": "A71",
+      "categoria": "Eletrônicos",
+      "freshness": " Second brand",
+      "preco": 1700,
+      "comentarios": "qualidade boa",
+      "data": "2022-06-24T03:00:00.000Z",
+      "id": 4
+    },
+    {
+      "produto": "Pêra",
+      "categoria": "Frutas",
+      "freshness": " Refurbished",
+      "preco": 4,
+      "comentarios": "gostoso",
+      "data": "2022-06-15T03:00:00.000Z",
+      "id": 5
+    },
+    {
+      "produto": "teste1",
+      "categoria": "Frutas",
+      "freshness": "Brand new",
+      "preco": 50000,
+      "comentarios": "31312321",
+      "data": "2022-06-13T03:00:00.000Z",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
